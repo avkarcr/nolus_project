@@ -12,6 +12,7 @@ nolus_version=$(curl -s "https://api.github.com/repos/Nolus-Protocol/nolus-core/
 git checkout v${nolus_version}
 make install
 export PATH=$PATH:$(go env GOPATH)/bin
+echo "PATH=$PATH:$(go env GOPATH)/bin" >> $HOME/.bashrc
 check_install=$(nolusd version --long | grep $nolus_version | wc -l)
 echo
 echo
