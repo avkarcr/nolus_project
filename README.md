@@ -6,8 +6,8 @@
 apt install -y screen curl
 screen -S install
 ```
-3. Находим нужный нам скрипт, копируем название файла (допустим это NODE_INSTALL.sh)
-4. Скачиваем скрипт командой
+3. Копируем путь к файлу скрипта из таблицы ниже в буфер обмена (например, файл называется NODE_INSTALL.sh)
+4. Скачиваем скрипт командой (curl -sO ПУТЬ-К-ФАЙЛУ), где O - это большая буква O (Output)
 ```
 curl -sO https://raw.githubusercontent.com/avkarcr/node_scripts/main/NODE_INSTALL.sh
 ```
@@ -21,5 +21,5 @@ cd ~ && ./NODE_INSTALL.sh
 ```
 ## Перечень нод и названий файлов:
 | Название | Тип ноды (если применимо) | Файл скрипта |
-| ------------ | --------- | --------------------- |
-| Nolus        | Full Node | [nolus_node_install.sh](https://raw.githubusercontent.com/avkarcr/node_scripts/main/nolus_install.sh) |
+| :--- | :--- | :--- |
+| Nolus | Full Node | [nolus_node_install.sh](https://raw.githubusercontent.com/avkarcr/node_scripts/main/nolus_install.sh) |
