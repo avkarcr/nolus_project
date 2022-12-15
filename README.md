@@ -21,4 +21,5 @@ cd ~ && ./NODE_INSTALL.sh
 ```
 ## Перечень нод и названий файлов:
 | Project Name | Node Type | Script Name           |
+| ------------ | --------- | --------------------- |
 | Nolus        | Full Node | nolus_node_install.sh |
