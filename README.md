@@ -15,7 +15,7 @@ curl -sO https://raw.githubusercontent.com/avkarcr/node_scripts/main/NODE_INSTAL
 ```
 chmod +x NODE_INSTALL.sh
 ```
-6. Запускаем файл на сервере из домашней папки
+6. Запускаем файл на сервере
 ```
 cd ~ && ./NODE_INSTALL.sh
 ```
