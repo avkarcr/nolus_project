@@ -5,7 +5,7 @@ apt install -y build-essential git curl gcc
 go_version='1.19.4'
 wget https://go.dev/dl/go${go_version}.linux-amd64.tar.gz && rm -rf /usr/local/go && tar -C /usr/local -xzf go${go_version}.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
-echo "PATH=$PATH:/usr/local/go/bin" >> $HOME/.bashrc
+# echo "PATH=$PATH:/usr/local/go/bin" >> $HOME/.bashrc
 git clone https://github.com/Nolus-Protocol/nolus-core
 cd nolus-core
 nolus_version=$(curl -s "https://api.github.com/repos/Nolus-Protocol/nolus-core/releases/latest" | grep tag_name | sed 's/.*": "v\(.*\)".*/\1/')
