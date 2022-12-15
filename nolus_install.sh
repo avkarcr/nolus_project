@@ -66,8 +66,8 @@ EOF
 systemctl daemon-reload
 systemctl enable cosmovisor
 systemctl start cosmovisor
-echo "curl http://localhost:26657/status | jq .result.sync_info.catching_up" > ~/nolus_check_status.sh && chmod +x ~/nolus_check_status.sh
+# echo "curl http://localhost:26657/status | jq .result.sync_info.catching_up" > ~/nolus_check_status.sh && chmod +x ~/nolus_check_status.sh
 echo
-echo "==================================================================================================="    
-echo -e "\e[1;32m Готово! Проверить работает ли нода можно с помощью скрипта nolus_check_status.sh \e[0m"
-echo "==================================================================================================="    
+echo "========================"    
+echo -e "\e[1;32m Готово! \e[0m"
+echo "========================"    
