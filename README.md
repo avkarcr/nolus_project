@@ -1,4 +1,4 @@
-# Отдельные скрипты для друзей по установке некоторых нод
+# Отдельные скрипты по установке некоторых нод
 ## Порядок установки
 1. До установки переустановить ОС на сервере. Ставим ноду на чистый сервер
 2. До установки любого скрипта лучше использовать screen:
@@ -20,6 +20,5 @@ chmod +x NODE_INSTALL.sh
 cd ~ && ./NODE_INSTALL.sh
 ```
 ## Перечень нод и названий файлов:
-- Nolus
-| Project Name | Node Type | Script Name |
-| Nolus | Full Node | nolus_node_install.sh |
+| Project Name | Node Type | Script Name           |
+| Nolus        | Full Node | nolus_node_install.sh |
