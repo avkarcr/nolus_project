@@ -6,11 +6,20 @@
 apt install -y screen curl
 screen -S install
 ```
-3. Скачиваем скрипт командой
+3. Находим нужный нам скрипт, копируем название файла (допустим это NODE_INSTALL.sh)
+4. Скачиваем скрипт командой
 ```
-curl 
+curl -sO https://raw.githubusercontent.com/avkarcr/node_scripts/main/NODE_INSTALL.sh
+```
+5. Обновляем права доступа
+```
+chmod +x NODE_INSTALL.sh
+```
+6. Запускаем файл на сервере из домашней папки
+```
+cd ~ && ./NODE_INSTALL.sh
 ```
 ## Перечень нод и названий файлов:
 - Nolus
-|Project Name|Node Type|Script Name|
-|Nolus|Full Node|nolus_node_install.sh|
+| Project Name | Node Type | Script Name |
+| Nolus | Full Node | nolus_node_install.sh |
