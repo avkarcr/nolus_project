@@ -1,7 +1,7 @@
 #!/bin/bash
 # written by avkar 15.12.2022
 apt update && apt upgrade -y
-apt install -y build-essential git curl gcc
+apt install -y build-essential git curl gcc jq
 go_version='1.19.4'
 wget https://go.dev/dl/go${go_version}.linux-amd64.tar.gz && rm -rf /usr/local/go && tar -C /usr/local -xzf go${go_version}.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
