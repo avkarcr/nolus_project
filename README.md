@@ -20,6 +20,6 @@ chmod +x NODE_INSTALL.sh
 cd ~ && ./NODE_INSTALL.sh
 ```
 ## Перечень нод и названий файлов:
-| Project Name | Node Type | Script Name           |
+| Название | Тип ноды (если применимо) | Файл скрипта |
 | ------------ | --------- | --------------------- |
-| Nolus        | Full Node | nolus_node_install.sh |
+| Nolus        | Full Node | [nolus_node_install.sh](https://raw.githubusercontent.com/avkarcr/node_scripts/main/nolus_install.sh) |
