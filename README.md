@@ -23,4 +23,4 @@ cd ~ && ./nolus_install.sh
 | Название | Тип ноды (если применимо) | Файл скрипта |
 | :--- | :--- | :--- |
 | Nolus | Full Node | [nolus_install.sh](https://raw.githubusercontent.com/avkarcr/node_scripts/main/nolus_install.sh) |
-| Nolus | Full Node | [nolus_install_wo_cosmovisor.sh](https://raw.githubusercontent.com/avkarcr/node_scripts/main/nolus_install_wo_cosmovisor.sh) |
+
