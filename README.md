@@ -13,11 +13,11 @@ curl -sO https://raw.githubusercontent.com/avkarcr/node_scripts/main/nolus_insta
 ```
 5. Обновляем права доступа
 ```
-chmod +x nolus_node_install.sh
+chmod +x nolus_install.sh
 ```
 6. Запускаем файл на сервере
 ```
-cd ~ && ./nolus_node_install.sh
+cd ~ && ./nolus_install.sh
 ```
 ## Перечень нод и названий файлов:
 | Название | Тип ноды (если применимо) | Файл скрипта |
