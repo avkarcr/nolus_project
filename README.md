@@ -17,6 +17,6 @@ curl -sO https://raw.githubusercontent.com/avkarcr/node_scripts/main/nolus_insta
 ```
 ## Перечень нод и названий файлов:
 | Название | Источник | Тип ноды (если применимо) | Файл скрипта |
-| :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- |
 | Nolus | kjnodes | Full Node | [nolus_install_kjnodes.sh](https://raw.githubusercontent.com/avkarcr/node_scripts/main/nolus_install_kjnodes.sh) |
 | Nolus | official | Full Node | [nolus_install.sh](https://raw.githubusercontent.com/avkarcr/node_scripts/main/nolus_install.sh) |
