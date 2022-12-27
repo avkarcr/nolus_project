@@ -4,6 +4,8 @@ echo "Установку ноды необходимо делать через s
 echo "=========================================================================================="
 echo
 read -p "Input your Node moniker: " MONIKER
+echo "export MONIKER=$MONIKER" >> ~/.profile
+source ~/.profile
 
 apt update
 apt install curl git jq lz4 build-essential -y
