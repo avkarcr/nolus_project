@@ -1,22 +1,24 @@
-# Отдельные скрипты по установке некоторых нод
-## Порядок установки
-1. До установки переустановить ОС на сервере. Ставим ноду на чистый сервер
-2. До установки любого скрипта лучше использовать screen:
+# Nolus Project install scripts
+## Procedure:
+1. You need a new server with Ubuntu 20+ on server to install the node
+2. Before you proceed with installation please run these commands:
 ```
 apt install -y screen curl
 screen -S install
 ```
-3. Копируем путь к файлу скрипта из [таблицы ниже](https://github.com/avkarcr/node_scripts/blob/main/README.md#%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%B5%D0%BD%D1%8C-%D0%BD%D0%BE%D0%B4-%D0%B8-%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B9-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2) в буфер обмена (например, файл называется NODE_INSTALL.sh)
-4. Скачиваем скрипт командой (curl -sO ПУТЬ-К-ФАЙЛУ), где O - это большая буква O (Output)
+3. Install the Full node and wait for a full synchronisation (you'll see how to check it after installation)
 ```
-curl -sO https://raw.githubusercontent.com/avkarcr/node_scripts/main/nolus_install_kjnodes.sh && chmod +x nolus_install_kjnodes.sh
+curl -sO https://raw.githubusercontent.com/avkarcr/node_scripts/main/1_nolus_install_fullnode.sh && chmod +x 1_nolus_install_fullnode.sh
+./1_nolus_install_fullnode.sh
 ```
-5. Запускаем скрипт
+4. Add your wallet and (manually) backup the data
 ```
-./nolus_install_kjnodes.sh
+curl -sO https://raw.githubusercontent.com/avkarcr/node_scripts/main/2_nolus_add_wallet.sh && chmod +x 2_nolus_add_wallet.sh
+./2_nolus_add_wallet.sh
 ```
-## Перечень нод и названий файлов:
-| Название | Источник | Тип ноды (если применимо) | Файл скрипта |
-| :--- | :--- | :--- | :--- |
-| Nolus | kjnodes | Full Node | [nolus_install_kjnodes.sh](https://raw.githubusercontent.com/avkarcr/node_scripts/main/nolus_install_kjnodes.sh) |
-| Nolus | official | Full Node | [nolus_install.sh](https://raw.githubusercontent.com/avkarcr/node_scripts/main/nolus_install.sh) |
+3. After Fullnode synchronisation create a Validator node
+```
+curl -sO https://raw.githubusercontent.com/avkarcr/node_scripts/main/3_nolus_create_validator.sh && chmod +x 3_nolus_create_validator.sh
+./3_nolus_create_validator.sh
+```
+## That's it! Enjoy )
