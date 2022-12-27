@@ -1,4 +1,6 @@
 # Nolus Project install scripts
+### This script is based on [kjnodes guide](https://services.kjnodes.com/home/testnet/nolus/).
+### Many thanks to [kjnodes](https://github.com/kj89)!
 ## Procedure:
 1. You need a new server with Ubuntu 20+ on server to install the node
 2. Before you proceed with installation please run these commands:
