@@ -21,3 +21,8 @@ nolusd tx staking create-validator \
 --gas=auto \
 --fees=1000unls \
 -y
+sleep 2
+nolusd tx bank send wallet $ADDRESS 500000unls --from wallet --chain-id nolus-rila --fees=1000unls
+echo
+echo "Validator has been created"
+echo
