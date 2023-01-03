@@ -1,6 +1,6 @@
 echo
 echo "==========================================================================================================="
-echo "There is a good preactice to install the node under the Screen."
+echo "There is a good practice to install the node under the Screen."
 echo "When installation is ended please type \"ctrl+a d\" to hide the screen session with Nolus logs running."
 echo "If you want to be sure that screen session is running now please type ctrl+c to exit the script."
 echo
